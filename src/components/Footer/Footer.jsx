@@ -3,7 +3,7 @@ import github from "../../assets/github.png"
 const Footer = () => {
   return (
     // <div className="flex justify-center align-middle">
-    <div className='flex justify-between pt-4 pb-4 pr-10 mt-10 align-middle bg-slate-200'>
+    <div className='flex justify-between pt-4 pb-4 pr-10 mt-10 align-middle bg-slate-300'>
       {/* <h1 className='pt-4 text-3xl font-bold text-center'>~ Our Community ~</h1> */}
        {/* <p className='p-2 font-mono font-bold text-center'>~ Start connecting with the world now ~</p>
       <p className='pb-2 font-thin text-center'>Designed and developed by <a href="" className='text-blue-800'>Dev</a></p>  */}

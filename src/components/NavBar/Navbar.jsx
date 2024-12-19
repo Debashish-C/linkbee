@@ -77,7 +77,7 @@ const Navbar = () => {
       </div>
 
       {/* ------------------------------------------------------------------------------------------------ */}
-      <div className="fixed flex justify-around w-full p-4 font-serif text-xl shadow-lg bg-slate-100 -top-20 md:top-0 z-52">
+      <div className="fixed flex justify-around w-full p-4 font-serif text-xl shadow-lg bg-slate-300 -top-20 md:top-0 z-52">
         <div>
           <img src={logo} alt="logo" className="w-12 h-12" />
         </div>

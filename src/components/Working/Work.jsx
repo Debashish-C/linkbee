@@ -271,14 +271,14 @@ const Work = () => {
         </div>
       </div>
     </div>
-     <div className="flex justify-center mt-20 align-middle">
+     {/* <div className="flex justify-center mt-20 align-middle">
         <div className="p-5 m-4 font-mono text-4xl font-bold text-white bg-blue-900 rounded-lg hover:bg-slate-500 hover:text-black">
             <button>SAVE</button>
         </div>
         <div className="p-5 m-4 font-mono text-4xl font-bold text-white bg-blue-900 rounded-lg hover:bg-slate-500 hover:text-black">
             <button>SHARE</button>
         </div>
-    </div>
+    </div> */}
     </>
   );
 };

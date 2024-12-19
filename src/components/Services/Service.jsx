@@ -34,7 +34,7 @@ const Service = () => {
 
      
       <div className="flex justify-around mt-10 align-middle text-start max-w-screen-2xl">
-        <img src={worldImg} alt="worldimg" className="w-2/3"/>
+        <img src={worldImg} alt="worldimg" className="w-2/3 mr-10"/>
         <div className="pt-36">
           <h1 className="mb-5 font-mono text-4xl font-bold">
             Reach out to everyone
