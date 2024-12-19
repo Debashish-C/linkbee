@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       </div>
         <div className="">
-          <a href="">
+          <a href="https://github.com/Debashish-C/linkbee">
             <img src={github} alt="" className="w-16 h-16"/>
           </a>
         </div>
