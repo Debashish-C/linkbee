@@ -22,14 +22,24 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="fixed top-0 w-full h-20 bg-gray-300 md:hidden">
+      <div className="fixed top-0 w-full h-20 bg-gray-300 md:hidden"
+      style={{
+        "font-family": "DynaPuff, serif",
+        "font-optical-sizing": "auto",
+        "font-weight": 900,
+        "fontSize":"24px",
+        "font-style": "normal",
+        "font-variation-settings":
+          "wdth 100"
+      }}
+      >
         <img
           src={logo}
           alt="logo"
           className="fixed top-0 w-16 h-16 m-1 md:invisible"
         />
         <div className="invisible " id="id">
-          <div className="fixed top-0 right-0 flex-col justify-around w-1/3 h-full text-2xl text-center align-middle z-1 bg-slate-100 " >
+          <div className="fixed top-0 right-0 flex-col justify-around w-1/2 h-full text-2xl text-center align-middle z-1 bg-slate-100 " >
             <div className="flex-col justify-center mt-20 align-middle">
               <div className="p-3">
                 <Link
@@ -63,17 +73,17 @@ const Navbar = () => {
           </div>
         </div>
         <button
-            className="fixed top-0 right-0 m-2 md:hidden"
+            className="fixed top-0 m-2 right-4 md:hidden"
             onClick={handleClick}
           >
             {visible ? <img src={closeImage} alt="navImg" className="w-10 h-10 m-2"/> : <img src={openImage} alt="navImg" className="w-16 h-16"/>}
             {/* <img src={!visible ? openImage : closeImage } alt="NavImg" className="w-16 h-16 m-3"  /> */}
           </button>
-          <div className=" mt-20 h-[60rem] text-center md:hidden flex justify-center align-middle text-2xl">
+          {/* <div className=" mt-20 h-[60rem] text-center md:hidden flex justify-center align-middle text-2xl">
             <div className="w-full h-full bg-slate-400">
               <h1>it is in development mode for responsive design</h1>
             </div>
-          </div>
+          </div> */}
       </div>
 
       {/* ------------------------------------------------------------------------------------------------ */}
@@ -87,7 +97,7 @@ const Navbar = () => {
                 "font-variation-settings":
                   "wdth 100"
               }}>
-        <div>
+        <div className="">
           <img src={logo} alt="logo" className="w-12 h-12" />
         </div>
         <div className="mt-2">
@@ -116,7 +126,7 @@ const Navbar = () => {
           <input type="text" className="p-2 ml-5 mr-2 text-xl border-2 border-black rounded-md w-36" placeholder="search by id"/>
           <button className=""><img src={searchImg} alt="" className="w-8 h-8 font-bold"/></button>
           </div>
-          <div className="fixed top-5 right-10">
+          <div className="relative pl-5">
             <button>
 
             <img src={userImg} alt="" className="w-10 h-10"/>
