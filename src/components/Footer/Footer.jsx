@@ -2,8 +2,8 @@
 import github from "../../assets/github.png"
 const Footer = () => {
   return (
-    // <div className="flex justify-center align-middle">
-    <div className='flex justify-between pt-4 pb-4 pr-10 mt-10 align-middle sm:flex-row bg-slate-300'>
+    <div className="flex justify-center align-middle bg-slate-300 sm:mt-10">
+    <div className='flex flex-col justify-center w-4/5 pb-4 pr-10 align-middle sm:justify-between sm:pt-4 sm:w-2/3 sm:flex-row bg-slate-000 '>
       {/* <h1 className='pt-4 text-3xl font-bold text-center'>~ Our Community ~</h1> */}
        {/* <p className='p-2 font-mono font-bold text-center'>~ Start connecting with the world now ~</p>
       <p className='pb-2 font-thin text-center'>Designed and developed by <a href="" className='text-blue-800'>Dev</a></p>  */}
@@ -32,13 +32,16 @@ const Footer = () => {
           </div>
       </div>
       </div>
-        <div className="">
-          <a href="https://github.com/Debashish-C/linkbee">
+        <div className="flex justify-center align-middle">
+          <a href="https://github.com/Debashish-C/es together in Git
+Stack Overflow
+https://stackoverflow.com
+Is there a way to merge linkbee">
             <img src={github} alt="" className="w-16 h-16"/>
           </a>
         </div>
     </div>
-    // </div>
+    </div>
   )
 }
 

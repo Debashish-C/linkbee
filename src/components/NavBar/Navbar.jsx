@@ -8,7 +8,7 @@ import closeImage from "../../assets/navClose.png";
 import searchImg from "../../assets/search.png"
 import userImg from "../../assets/user.png"
 const Navbar = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const handleClick = () => {
     let id = document.getElementById("id");
     if (!visible) {
@@ -76,14 +76,8 @@ const Navbar = () => {
             className="fixed top-0 m-2 right-4 md:hidden"
             onClick={handleClick}
           >
-            {visible ? <img src={closeImage} alt="navImg" className="w-10 h-10 m-2"/> : <img src={openImage} alt="navImg" className="w-16 h-16"/>}
-            {/* <img src={!visible ? openImage : closeImage } alt="NavImg" className="w-16 h-16 m-3"  /> */}
+            {visible ? <img src={closeImage}  alt="navImg" className="w-10 h-10 m-2"/> : <img src={openImage} alt="navImg" className="w-16 h-16"/> }
           </button>
-          {/* <div className=" mt-20 h-[60rem] text-center md:hidden flex justify-center align-middle text-2xl">
-            <div className="w-full h-full bg-slate-400">
-              <h1>it is in development mode for responsive design</h1>
-            </div>
-          </div> */}
       </div>
 
       {/* ------------------------------------------------------------------------------------------------ */}

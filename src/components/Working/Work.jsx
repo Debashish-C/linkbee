@@ -130,16 +130,16 @@ const Work = () => {
               Background {" "}
             </h2>
             <div className="flex flex-col justify-center w-full p-2 mb-4 align-middle shadow-xl sm:flex-row sm:pl-4 sm:pr-4 sm:m-2 sm:p-4 rounded-xl bg-slate-400 sm:w-fit ">
-              <div className="flex justify-center pt-2 align-middle">
+              <div className="flex justify-center pt-4 align-middle">
                 <input
                   type="file"
                   id="back"
                   placeholder="upload background image"
                   onChange={handleBackground}
-                  className="p-2 sm:p-0"
+                  className=" sm:p-0"
                 />
               </div>
-              <div className="flex justify-center pt-5 align-middle sm:pt-0">
+              <div className="flex justify-center pt-4 align-middle sm:pt-0">
                 <button
                   className="p-2 font-mono font-bold border-2 border-slate-800 rounded-xl"
                   onClick={handleBackground}
@@ -254,7 +254,7 @@ const Work = () => {
                 Profile Picture 
               </h1>
             </div>
-            <div className="flex flex-col justify-center p-4 m-1 align-middle shadow-xl sm:flex-row w-fit bg-slate-400 rounded-xl">
+            <div className="flex flex-col justify-center w-full p-4 m-1 align-middle shadow-xl sm:flex-row sm:w-fit bg-slate-400 rounded-xl">
               <div className="flex justify-center pt-4 align-middle sm:pt-2">
                 <input type="file" id="profile" onChange={handleProfile} />
               </div>
@@ -281,13 +281,13 @@ const Work = () => {
                 Bio 
               </h2>
             </div>
-            <div className="flex flex-col justify-center p-2 m-4 align-middle shadow-xl sm:flex-row w-fit bg-slate-400 rounded-xl">
+            <div className="flex flex-col justify-center w-4/5 p-2 align-middle shadow-xl sm:m-4 sm:flex-row bg-slate-400 rounded-xl">
               <div className="text-center">
                 <textarea
                   name=""
                   id="bio"
                   placeholder="enter bio"
-                  className="font-semibold text-center rounded-lg outline-none w-80 sm:w-96" 
+                  className="w-full font-semibold text-center rounded-lg outline-none sm:w-96" 
                 ></textarea>
               </div>
               <div className="flex justify-center pt-2 ml-4 mr-4 align-middle">
