@@ -5,8 +5,8 @@ import worldImg from "../../assets/world.jpg";
 const Service = () => {
   return (
     <>
-      <div className="flex justify-center align-middle">
-        <div className="flex flex-col justify-center w-4/5 align-middle sm:flex-row sm:w-2/3">
+      <div className="flex justify-center mt-12 align-middle sm:mt-0">
+        <div className="flex flex-col justify-center w-4/5 align-middle lg:flex-row sm:w-2/3">
           <div className="flex-col pt-10 sm:pt-28">
                 <div className="">
                   <h1
@@ -62,7 +62,7 @@ const Service = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-col-reverse justify-around w-4/5 mt-10 align-middle sm:w-2/3 sm:flex-row text-start">
+        <div className="flex flex-col-reverse justify-around w-4/5 mt-10 align-middle sm:w-2/3 lg:flex-row text-start">
           <img src={worldImg} alt="worldimg" className="w-full mr-10 sm:w-2/3" />
           <div className="pt-10">
             <h1

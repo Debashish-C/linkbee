@@ -4,18 +4,18 @@ import { Link } from 'react-router'
 const Login = () => {
   return (
     <div className='mt-64 text-center'>
-      <h2 className='font-mono text-5xl text-center'
+      <h2 className='font-mono text-3xl text-center sm:text-5xl text-[2.5rem] sm:text-[3rem]'
       
       style={{
         "font-family": "DynaPuff, serif",
         "font-optical-sizing": "auto",
         "font-weight": 200,
-        "fontSize":"3rem",
+        // "fontSize":"3rem",
         "font-style": "normal",
         "font-variation-settings":
           "wdth 200"
       }}
-      >~ Welcome Back ~</h2>
+      > Welcome Back </h2>
       <div className="flex-col justify-center mt-10 align-middle">
         <div className="">
             <input type="text" placeholder='userid' className='p-3 m-2 rounded-lg w-72 bg-slate-200'/>

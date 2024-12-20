@@ -8,6 +8,7 @@ import Login from "./components/Login/Login";
 import SignUp from "./components/Signup/SignUp";
 import Navbar from "./components/NavBar/Navbar";
 import Work from "./components/Working/Work";
+import Smtp from "./components/SMTP/Smtp";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="work" element={<Work />} />
+          <Route path="smtp" element={<Smtp />} />
           
         </Route>
       </Routes>

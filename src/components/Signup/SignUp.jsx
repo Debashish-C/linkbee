@@ -20,7 +20,7 @@ const SignUp = () => {
             <input type="text" placeholder='Name' className='p-3 m-2 rounded-lg w-72 bg-slate-200'/>
         </div>
         <div className="">
-            <input type="email" placeholder='password' className='p-3 m-2 rounded-lg w-72 bg-slate-200'/>
+            <input type="email" placeholder='email' className='p-3 m-2 rounded-lg w-72 bg-slate-200'/>
         </div>
         <div className="">
             <input type="text" placeholder='userid' className='p-3 m-2 rounded-lg w-72 bg-slate-200'/>

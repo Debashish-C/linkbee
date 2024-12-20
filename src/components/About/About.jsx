@@ -21,7 +21,7 @@ const About = () => {
             Your Online Reach
           </h1>
         </div>
-        <div className="flex flex-col justify-between mt-2 align-middle sm:flex-row sm:mt-10">
+        <div className="flex flex-col justify-between mt-2 overflow-auto align-middle sm:flex-row sm:mt-10">
           <div className="flex justify-center p-10 align-middle">
             <Card
               heading="Showcase"

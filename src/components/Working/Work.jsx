@@ -1,7 +1,13 @@
 import { useState } from "react";
 import user from "../../assets/user.png";
 import LinkView from "../Link/LinkView";
-
+import linkedin from "../../assets/linkedin.png"
+import email from "../../assets/email.png"
+import github from "../../assets/github.png"
+import instagram from "../../assets/instagram.png"
+import portfolioImg from "../../assets/portfolio.png"
+import twitter from "../../assets/twitter.png"
+import facebook from "../../assets/facebook.png"
 const Work = () => {
   const [background, setBackground] = useState("white");
   const [color, setColor] = useState("black");
@@ -24,6 +30,7 @@ const Work = () => {
           link,
         },
       ]);
+      document.getElementById("linkId").value = " ";
   };
 
   const remove = (index) => {
@@ -51,7 +58,7 @@ const Work = () => {
         <div
           id="phone"
           className="flex-col  justify-center sm:w-2/3 w-full h-[45rem] sm:h-[53rem] overflow-auto p-3 mt-10  border-2 border-black rounded-md bg-slate-300"
-          style={{ color: color, fonts }}
+          style={{ color: color}}
         >
           <div className="flex justify-center">
             <div className="h-10 rounded-2xl w-52 bg-slate-700">-</div>
@@ -74,17 +81,20 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center text-center">
+          <div className="flex justify-center align-middle" style={fonts}>
+            <input type="text" placeholder="Name" className="text-2xl text-center bg-slate-300"/>
+          </div>
+          <div className="flex justify-center text-center" style={fonts}>
             <textarea
               disabled
               name=""
               id=""
-              className="p-3 w-[26rem] outline-none bg-slate-300 rounded-md text-center text-2xl"
+              className="p-3 sm:w-[26rem] outline-none bg-slate-300 rounded-md text-center sm:text-2xl text-xl"
               placeholder=" Bio"
               value={bio}
             ></textarea>
           </div>
-          <div className="">
+          <div className="" style={fonts}>
             {array.map((v, i) => (
               <div key={i}>
                 <LinkView
@@ -129,8 +139,8 @@ const Work = () => {
               {" "}
               Background {" "}
             </h2>
-            <div className="flex flex-col justify-center w-full p-2 mb-4 align-middle shadow-xl sm:flex-row sm:pl-4 sm:pr-4 sm:m-2 sm:p-4 rounded-xl bg-slate-400 sm:w-fit ">
-              <div className="flex justify-center pt-4 align-middle">
+            <div className="flex flex-col justify-center w-full p-2 mb-4 overflow-auto align-middle shadow-xl sm:flex-row sm:pl-4 sm:pr-4 sm:m-2 sm:p-4 rounded-xl bg-slate-400 sm:w-fit ">
+              <div className="flex justify-center align-middle sm:pt-4">
                 <input
                   type="file"
                   id="back"
@@ -254,8 +264,8 @@ const Work = () => {
                 Profile Picture 
               </h1>
             </div>
-            <div className="flex flex-col justify-center w-full p-4 m-1 align-middle shadow-xl sm:flex-row sm:w-fit bg-slate-400 rounded-xl">
-              <div className="flex justify-center pt-4 align-middle sm:pt-2">
+            <div className="flex flex-col justify-center w-full p-4 m-1 overflow-auto align-middle shadow-xl sm:flex-row sm:w-fit bg-slate-400 rounded-xl">
+              <div className="flex justify-center align-middle sm:pt-4 ">
                 <input type="file" id="profile" onChange={handleProfile} />
               </div>
               <div className="flex justify-center pt-4 align-middle sm:pt-0">
@@ -281,7 +291,7 @@ const Work = () => {
                 Bio 
               </h2>
             </div>
-            <div className="flex flex-col justify-center w-4/5 p-2 align-middle shadow-xl sm:m-4 sm:flex-row bg-slate-400 rounded-xl">
+            <div className="flex flex-col justify-center w-full p-2 align-middle shadow-xl sm:m-4 sm:flex-row bg-slate-400 rounded-xl">
               <div className="text-center">
                 <textarea
                   name=""
@@ -301,7 +311,7 @@ const Work = () => {
             </div>
           </div>
           {/* add link */}
-          <div className="mt-10">
+          <div className="mt-10 overflow-auto">
             <div className="m-4">
               <h1
                 className="m-4 text-cyan-800 text-[28px] sm:text-[40px] text-center sm:text-start"
@@ -317,24 +327,33 @@ const Work = () => {
                 Link 
               </h1>
             </div>
-            <div className="flex flex-col justify-center p-4 m-1 align-middle shadow-xl sm:flex-row w-fit bg-slate-400 rounded-xl">
+            <div className="flex flex-col justify-center w-full p-4 m-1 align-middle shadow-xl sm:flex-row bg-slate-400 rounded-xl">
               <div className="flex justify-center p-2 pb-4 align-middle sm:pb-0">
                 <select
                   name=""
                   id="icon"
                   className="font-mono font-bold bg-slate-400"
                 >
-                  <option value="facebook" className="">
+                  <option value={facebook} className="">
                     facebook
                   </option>
-                  <option value="instagram" className="">
+                  <option value={instagram} className="">
                     instagram
                   </option>
-                  <option value="email" className="">
+                  <option value={email} className="">
                     email
                   </option>
-                  <option value="linkedIn" className="">
+                  <option value={linkedin} className="">
                     linkedIn
+                  </option>
+                  <option value={github} className="">
+                    github
+                  </option>
+                  <option value={twitter} className="">
+                    twitter
+                  </option>
+                  <option value={portfolioImg} className="">
+                    portfolio
                   </option>
                 </select>
               </div>
@@ -409,7 +428,20 @@ const Work = () => {
                   fontSize: "20px",
                 }}
               >
-                <button>The quick brown fox jumps over the lazy dog.</button>
+                <button
+                
+                onClick={()=>{
+                  setFont({
+                    "font-family": "Lora, serif",
+                    "font-optical-sizing": "auto",
+                    "font-weight": 600,
+                    "font-style": "normal",
+                    fontSize: "20px",
+                  })
+                }}
+                
+                
+                >The quick brown fox jumps over the lazy dog.</button>
               </div>
               <div
                 className="flex justify-center p-2 m-2"
@@ -422,7 +454,21 @@ const Work = () => {
                   fontSize: "22px",
                 }}
               >
-                <button>The quick brown fox jumps over the lazy dog.</button>
+                <button
+                onClick={
+                  () => {
+                    setFont({
+                      "font-family": "Sour Gummy, serif",
+                      "font-optical-sizing": "auto",
+                      "font-weight": 400,
+                      "font-style": "normal",
+                      "font-variation-settings": "wdth 100",
+                      fontSize: "22px",
+                    })
+                  }
+                }
+                
+                >The quick brown fox jumps over the lazy dog.</button>
               </div>
               <div
                 className="flex justify-center p-2 m-2"
@@ -433,13 +479,27 @@ const Work = () => {
                   fontSize: "30px",
                 }}
               >
-                <button>The quick brown fox jumps over the lazy dog.</button>
+                <button
+                onClick={
+                  ()=>{
+                    setFont({
+                      "font-family": "Mouse Memoirs,serif",
+                      "font-weight": 400,
+                      "font-style": "normal",
+                      fontSize: "30px",
+                    })
+                  }
+                }
+                
+                
+                >The quick brown fox jumps over the lazy dog.</button>
               </div>
-              <div className="flex justify-center p-2 m-2 font-serif text-2xl">
-                <button>The quick brown fox jumps over the lazy dog.</button>
-              </div>
-              <div className="flex justify-center p-2 m-2 text-2xl">
-                <button>The quick brown fox jumps over the lazy dog.</button>
+              <div className="flex justify-center p-2 m-2 text-2xl" style={{fontFamily:"sans-serif"}}>
+                <button
+                onClick={
+                  ()=> setFont({fontFamily:"sans-serif"})
+                }
+                >The quick brown fox jumps over the lazy dog.</button>
               </div>
             </div>
           </div>
