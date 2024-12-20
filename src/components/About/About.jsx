@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Card from '../Card/Card'
 import card1 from "../../assets/about1.webp"
 import card2 from "../../assets/about2.webp"
@@ -6,12 +6,14 @@ import card3 from "../../assets/about3.webp"
 const About = () => {
   return (
     <>
-    <div className='flex-col justify-center w-full p-2 pt-10 mt-20 mb-40 text-center align-middle bg-slate-200'>
+    <div className='flex-col justify-center w-full p-2 pt-10 mb-40 text-center align-middle mt-28 bg-slate-200'>
       <div>
-        <h1 className='text-4xl font-bold md:text-6xl'>Unlock the Potential of<br/>
+        <h1 className='text-4xl md:text-8xl' style={{"font-family": "Mouse Memoirs,serif" ,
+  "font-weight": 400,
+  "font-style": "normal"}}>Unlock the Potential of<br/>
         Your Online Reach</h1>
       </div>
-      <div className='flex justify-center mt-10 align-middle md:flex sm:flex'>
+      <div className='flex justify-center mt-10 align-middle md:flex sm:flex' >
         <div className="flex justify-center p-10">
         <Card heading="Showcase"  card={card1}
 content="We believe in the power of showcasing your unique talents, passions, and achievements to the world." />

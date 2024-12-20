@@ -1,9 +1,18 @@
 const Card = (props) => {
   return (
-    <div className='p-5 rounded-md shadow-xl h-96 w-80 bg-slate-100 hover:bg-slate-200 ' >
+    <div className='p-5 rounded-md shadow-xl h-[28rem] w-80 bg-slate-100 hover:bg-slate-400 ' >
     <img src={props.card} alt="img" className="pl-10"/>
-      <h2 className="text-2xl font-light ">{props.heading}</h2>
-      <p className="font-sans font-semibold">{props.content}</p>
+      <h2 className="p-2 text-4xl "    style={{
+            "font-family": "Mouse Memoirs,serif",
+            "font-weight": 400,
+            "font-style": "normal",
+          }}>{props.heading}</h2>
+      <p className="text-xl" style={{
+                "font-family": "Lora, serif",
+                "font-optical-sizing": "auto",
+                "font-weight": 600,
+                "font-style": "normal",
+              }}>{props.content}</p>
     </div>
   )
 }
