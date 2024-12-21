@@ -39,7 +39,7 @@ const Navbar = () => {
           className="fixed top-0 w-16 h-16 m-1 md:invisible"
         />
         <div className="invisible " id="id">
-          <div className="fixed top-0 right-0 flex-col justify-around w-1/2 h-full text-2xl text-center align-middle z-1 bg-slate-100 " >
+          <div className="fixed  top-0 right-0 flex-col justify-around w-1/2 h-full text-2xl text-center align-middle z-1 bg-slate-100 " >
             <div className="flex-col justify-center mt-20 align-middle">
               <div className="p-3">
                 <Link
