@@ -34,10 +34,7 @@ const Footer = () => {
       </div>
       </div>
         <div className="flex justify-center align-middle">
-          <a href="https://github.com/Debashish-C/es together in Git
-Stack Overflow
-https://stackoverflow.com
-Is there a way to merge linkbee">
+          <a href="https://github.com/Debashish-C/linkbee">
             <img src={github} alt="" className="w-16 h-16"/>
           </a>
         </div>
